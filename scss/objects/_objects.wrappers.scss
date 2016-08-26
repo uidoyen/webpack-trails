@@ -1,0 +1,8 @@
+.o-wrapper-f {
+	@include center($max_width: 1280px, $pad: 10px);
+	@include bp(tablet){
+
+		padding: 0  40px;
+
+	}
+}

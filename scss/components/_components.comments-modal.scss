@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #COMMENTS-MODAL
+\*------------------------------------*/
+
+// Preconfigure these settings before the @import of this file.
+$comments-modal-ns: null !default;
+$comments-modal-filter-width: 35% !default;
+$comments-modal-main-width: 60% !default;
+$comments-modal-main-height: 400px !default;
+
+/**
+ *
+ */
+.#{$comments-modal-ns}c-comments-modal {
+    box-sizing: border-box;
+    padding: 2.5%;
+}
+
+    /**
+     * The filter options
+     */
+    .#{$comments-modal-ns}c-comments-modal__filter-area {
+        width: $comments-modal-filter-width;
+        position: fixed;
+    }
+
+    /**
+    * The main area where comments are rendered
+    */
+    .#{$comments-modal-ns}c-comments-modal__main-area {
+        width: $comments-modal-main-width;
+        padding-left: 2%;
+    }
+
+        .#{$comments-modal-ns}c-comments-modal__comments {
+            height: $comments-modal-main-height;
+            overflow: auto;
+            margin: 0;
+        }
+
+    .#{$comments-modal-ns}c-comments-modal__comment-box {
+        text-align: left;
+    }

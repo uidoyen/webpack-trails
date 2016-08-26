@@ -1,0 +1,94 @@
+/*
+This project follows Inverted Triangle CSS (ITCSS) by
+Harry "CSS Wizardry" Roberts. Files should be organized
+by groups which are described in detail below. As we go
+down our list of files we should go from:
+  Generic to explicit
+  Far-reaching to localised
+  Low specificity to high specificity
+*/
+
+/*
+SETTINGS
+Settings store all variables, config switches, etc.
+Split up into logical sections, the smaller and simpler the better.
+*/
+@import "settings/settings.config";
+@import "settings/settings.global";
+@import "settings/settings.grid";
+@import "settings/settings.colors";
+@import "settings/settings.breakpoints";
+@import "settings/settings.fonts";
+
+/* TOOLS
+ * Mixins...............Global mixins.
+*/
+@import "tools/tools.mixins";
+@import "tools/tools.aliases";
+@import "tools/tools.functions";
+@import "tools/tools.grid";
+@import "tools/tools.breakpoints";
+
+
+/*
+* GENERIC
+* Normalize.css........Normalise browser defaults…
+* Reset................…and zero them out.
+* Box-sizing...........More manageable box-model.
+* Shared...............Share certain high-level styles as broadly as possible.
+*/
+@import "generics/generic.normalize";
+@import "generics/generic.reset";
+@import "generics/generic.box-sizing";
+@import "generics/generic.shared";
+
+/*
+* ELEMENTS
+* Headings.............H1–H6
+* Forms................Element-level form styling.
+*/
+@import "elements/elements.page";
+@import "elements/elements.headings";
+@import "elements/elements.forms";
+@import "elements/elements.images";
+@import "elements/elements.lists";
+@import "elements/elements.links";
+@import "elements/elements.quotes";
+@import "elements/elements.hr";
+
+/*
+* OBJECTS
+* Layout...............Simple Layout abstraction tool.
+* List-bare............‘Unstyled’ lists: bullets and indent removed.
+* List-pair............Simple key–value pair list.
+* Pack.................Force elements to pack up into all available space.
+*/
+
+@import "objects/objects.layout";
+@import "objects/objects.list-bare";
+@import "objects/objects.list-pair";
+@import "objects/objects.pack";
+@import "objects/objects.wrappers";
+
+/*
+* COMPONENTS
+* Forms................Component-level form styling.
+* Buttons..............Element-agnostic button styles.
+* Comments.............Comment styles.
+* Messaging............User feedback messaging.
+*/
+@import "components/components.header";
+@import "components/components.forms";
+@import "components/components.buttons";
+@import "components/components.comments";
+@import "components/components.messaging";
+
+/*
+* TRUMPS
+* Typography...........Utilities for manipulating text.
+* Display..............Helper classes for showing or hiding content.
+* Widths...............Width helper classes for use with our Layout system.
+*/
+@import "trumps/trumps.typography";
+@import "trumps/trumps.display";
+@import "trumps/trumps.widths";

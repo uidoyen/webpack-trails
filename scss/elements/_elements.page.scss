@@ -1,0 +1,25 @@
+body {
+    @include font-family($ar);
+    @include font-size(18px, normal);
+    font-smoothing: antialiased;
+    /*@include bp(mobile) {
+        @include font-size(20px, normal);
+    }*/
+
+    strong {
+
+        @include font-family($ar-b);
+        
+        em {
+            font-style: italic;
+        }
+    }
+
+    em {
+        font-style: italic;
+        
+        strong {
+            @include font-family($ar-b);
+        }
+    }
+}

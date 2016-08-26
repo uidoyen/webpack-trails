@@ -1,0 +1,19 @@
+@mixin font-face-src($name, $file) {
+    font-family: #{$name};
+    src: url('../fonts/#{$file}.woff2') format('woff2'),
+    url("../fonts/#{$file}.woff") format("woff"), 
+    url("../fonts/#{$file}.ttf") format("truetype");
+}
+@font-face {
+    @include font-face-src("AvenirRegular", "AvenirNextLTPro-Regular");
+}
+@font-face {
+    @include font-face-src("AvenirNextLTProIt", "AvenirNextLTPro-It");
+}
+@font-face {
+    @include font-face-src("AvenirNextLTProDemi", "AvenirNextLTPro-Demi");
+}
+@font-face {
+    @include font-face-src("AvenirNextLTProBold", "AvenirNextLTPro-Bold");
+}
+

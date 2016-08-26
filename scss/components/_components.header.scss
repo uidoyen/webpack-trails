@@ -1,0 +1,55 @@
+.c-header {
+
+	background-color: $color-violet;
+
+	&__branding {
+		@include clearfix;
+		height: 67px;
+		margin-top: 40px;
+		display: flex;
+
+		@include bp(tablet){
+			margin-top: 0;
+			height: 60px;
+		}
+
+		@include bp(tablet-large){
+			height: 67px;
+		}	
+
+	}
+	.brand-logo {
+		flex-grow:1;
+	
+		@include bp(mobile-large){
+			align-self: center;
+		}
+
+		h1 {
+
+			@include bp(mobile-large){
+				font-size: 2rem;
+			}
+			@include bp(tablet){
+				font-size: 1rem;
+			}
+		}
+		a {
+			font-family:$ar;
+			font-size: 20px;
+			line-height: normal;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+.services {
+	@include center(1200px, 10px);
+
+	div {
+		@include col(1/6, $gutter: 2, $cycle: 4);
+	}
+}
+		
