@@ -1,6 +1,8 @@
 body {
     @include font-family($ar);
     @include font-size(18px, normal);
+    font-weight:400;
+    @include opacity(0.8);
     font-smoothing: antialiased;
     /*@include bp(mobile) {
         @include font-size(20px, normal);
@@ -8,7 +10,7 @@ body {
 
     strong {
 
-        @include font-family($ar-b);
+        @include font-family($ar);
         
         em {
             font-style: italic;
@@ -19,7 +21,7 @@ body {
         font-style: italic;
         
         strong {
-            @include font-family($ar-b);
+            @include font-family($ar);
         }
     }
 }

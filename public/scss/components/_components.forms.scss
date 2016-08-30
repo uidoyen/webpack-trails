@@ -51,7 +51,7 @@ $input-text-font-size:          12px !default;
 // Preconfigure these settings before the @import of this file.
 $input-radio-color-bg:          $color-dark-violet !default;
 $input-radio-color-border:      $input-border !default;
-$input-radio-label-font-family: $ar !default;
+//$input-radio-label-font-family: $ar !default;
 $input-radio-label-font-size: $base-font-size !default;
 
 /**
@@ -85,7 +85,7 @@ $input-radio-label-font-size: $base-font-size !default;
  */
 .#{$input-ns}c-input-radio-dummy {
     display: block;
-    font-family: $input-radio-label-font-family;
+    //ßfont-family: $input-radio-label-font-family;
     font-size: $input-radio-label-font-size;
 
     /**
